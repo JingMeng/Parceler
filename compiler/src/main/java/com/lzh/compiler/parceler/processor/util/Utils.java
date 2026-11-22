@@ -1,4 +1,4 @@
-package com.lzh.compiler.parceler.processor.util;
+﻿package com.lzh.compiler.parceler.processor.util;
 
 import com.lzh.compiler.parceler.processor.ParcelException;
 import com.squareup.javapoet.TypeName;
@@ -89,7 +89,7 @@ public class Utils {
     }
 
     /**
-     * Check out if the field {@code var} has been annotated by {@code android.support.annotation.NonNull}
+     * Check out if the field {@code var} has been annotated by {@code androidx.annotation.NonNull}
      * @param var field
      * @return true if is has annotated by NonNull
      */
@@ -108,3 +108,4 @@ public class Utils {
         return field.getModifiers().contains(Modifier.PRIVATE);
     }
 }
+

@@ -1,4 +1,4 @@
-package com.lzh.compiler.parceler.processor.model;
+﻿package com.lzh.compiler.parceler.processor.model;
 
 import com.squareup.javapoet.ClassName;
 
@@ -13,8 +13,8 @@ public class Constants {
     // some class name that not include in java library
 //    public static final String CLASS_NAME_BUNDLE = "android.os.Bundle";
 //    public static final String CLASS_NAME_INTENT = "android.content.Intent";
-//    public static final String CLASS_NAME_NONNULL = "android.support.annotation.NonNull";
-//    public static final String CLASS_NAME_NULLABLE = "android.support.annotation.Nullable";
+//    public static final String CLASS_NAME_NONNULL = "androidx.annotation.NonNull";
+//    public static final String CLASS_NAME_NULLABLE = "androidx.annotation.Nullable";
 //    public static final String CLASS_NAME_BINDER = "android.os.IBinder";
 
     public static final ClassName CLASS_BUNDLE = ClassName.bestGuess("android.os.Bundle");
@@ -29,3 +29,4 @@ public class Constants {
     public static final String METHOD_TO_ENTITY = "toEntity";
     public static final String METHOD_TO_BUNDLE = "toBundle";
 }
+

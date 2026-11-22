@@ -3,12 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 27
+    namespace 'com.lzh.compiler.parcelerdemo'
+    compileSdk 34
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.lzh.compiler.parcelerdemo"
-        minSdkVersion 15
-        targetSdkVersion 27
+        minSdk 15
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -21,6 +22,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -51,3 +53,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
 }
+
+
+
